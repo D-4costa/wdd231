@@ -6,6 +6,12 @@
   <meta name="description" content="Course Home page for Danielle Acosta from Colombia, WDD 131 Dynamic Web Fundamentals.">
   <meta name="author" content="Danielle Acosta">
   <title>WDD 131: Dynamic Web Fundamentals | Danielle Acosta</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/base.css">
   <script src="scripts/main.js" defer></script>
 </head>
@@ -15,9 +21,10 @@
     <div class="header-inner">
       <img src="images/logo.svg" alt="Cute pink logo" class="logo" />
       <span class="site-name">Danielle Acosta 💖</span>
-      <button id="menu">☰</button>
+      <button id="menu" aria-controls="primaryNav" aria-expanded="false" aria-label="Open navigation">☰</button>
     </div>
-    <nav class="navigation">
+
+    <nav id="primaryNav" class="navigation" aria-label="Main navigation">
       <a href="#" class="active">Home</a>
       <a href="#">Chamber</a>
       <a href="#">Final</a>
@@ -26,6 +33,9 @@
   </header>
 
   <main>
+
+    <h1>WDD 131: Course Home — Danielle Acosta</h1>
+
     <section class="intro card">
       <h2>Welcome, Danielle Acosta 💕</h2>
       <p>Student from Colombia learning to build beautiful, responsive, and dynamic websites.</p>
@@ -34,20 +44,20 @@
     <section class="courses card">
       <h2>Course List</h2>
       <div class="filter-buttons">
-        <button data-filter="all">All</button>
+        <button data-filter="all" class="active">All</button>
         <button data-filter="completed">Completed</button>
         <button data-filter="in-progress">In Progress</button>
       </div>
-      <ul id="courseList"></ul>
-      <p id="totalCredits"></p>
+      <ul id="courseList" aria-live="polite"></ul>
+      <p id="totalCredits" aria-atomic="true"></p>
     </section>
 
     <section class="resources card">
       <h2>Resources</h2>
       <ul>
-        <li><a href="https://www.byui.edu/online" target="_blank">BYU–Idaho Online Learning</a></li>
-        <li><a href="https://www.churchofjesuschrist.org" target="_blank">Church of Jesus Christ</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYU–Idaho Online Learning</a></li>
+        <li><a href="https://www.churchofjesuschrist.org" target="_blank" rel="noopener">Church of Jesus Christ</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener">MDN Web Docs</a></li>
       </ul>
     </section>
   </main>
