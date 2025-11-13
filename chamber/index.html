@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bogotá Chamber of Commerce | Home Page</title>
+  <meta name="description" content="Discover local businesses, events, and opportunities with the Bogotá Chamber of Commerce. Join us to connect and grow together.">
+  <meta name="author" content="Danielle Acosta">
+
+  <meta property="og:title" content="Bogotá Chamber of Commerce | Supporting Local Business and Community Growth">
+  <meta property="og:description" content="Discover local businesses, events, and opportunities with the Bogotá Chamber of Commerce. Connect, grow, and thrive together.">
+  <meta property="og:image" content="https://d-4costa.github.io/wdd231/chamber/images/hero.png">
+  <meta property="og:url" content="https://d-4costa.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <link rel="icon" href="images/byui-logo.svg" type="image/svg+xml">
+
+  <!-- ✅ Script correctly placed and deferred for BYU-I validation -->
+  <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="images/byui-logo.svg" alt="BYU-I logo" class="logo">
+      <nav class="main-nav" aria-label="Main">
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false">Menu</button>
+        <ul id="navList" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="week1-project1.html">W1</a></li>
+          <li><a href="week2-project2.html">W2</a></li>
+          <li><a href="week3-project3.html">W3</a></li>
+          <li><a href="week4-project4.html">W4</a></li>
+          <li><a href="week5-project5.html">W5</a></li>
+          <li><a href="week6-project6.html">W6</a></li>
+          <li><a href="week7-project7.html">W7</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.svg" alt="Chamber hero image" class="hero-img">
+      <div class="hero-cta">
+        <h1>Welcome to the Chamber</h1>
+        <p>Connecting local businesses, visitors, and community resources.</p>
+        <a class="btn primary" href="join.html">Join the Chamber</a>
+      </div>
+    </section>
+
+    <section class="content container">
+      <article class="events" aria-labelledby="eventsHeading">
+        <h2 id="eventsHeading">Current Events</h2>
+        <ul class="events-list">
+          <li><strong>Small Business Saturday</strong> — Nov 22: Local shops open late.</li>
+          <li><strong>Networking Breakfast</strong> — Dec 3: Join local business owners for coffee and introductions.</li>
+        </ul>
+      </article>
+
+      <aside class="weather" aria-labelledby="weatherHeading">
+        <h2 id="weatherHeading">Weather</h2>
+        <div id="weatherCurrent" class="weather-current">
+          <p>Loading weather...</p>
+        </div>
+        <div id="weatherForecast" class="weather-forecast" aria-live="polite"></div>
+        <p class="muted small">Weather data shown is simulated for demonstration purposes (Bogotá, CO).</p>
+      </aside>
+
+      <section class="spotlights" aria-labelledby="spotlightHeading">
+        <h2 id="spotlightHeading">Member Spotlights</h2>
+        <div id="spotlightContainer" class="spotlight-container">
+          <!-- Spotlight cards will be injected here -->
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Bogotá Chamber of Commerce — BYU-I. Credits: Danielle Acosta</p>
+    </div>
+  </footer>
+</body>
+</html>
+

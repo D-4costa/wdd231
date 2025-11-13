@@ -1,0 +1,42 @@
+[
+  {
+    "companyName": "Sunny Bakery",
+    "logo": "images/sunny-bakery.svg",
+    "phone": "(555) 123-4567",
+    "address": "12 Market St, Smalltown, ST",
+    "website": "https://sunnybakery.example.com",
+    "membership": "gold"
+  },
+  {
+    "companyName": "GreenTech LLC",
+    "logo": "images/greentech.svg",
+    "phone": "(555) 555-0199",
+    "address": "88 Industrial Way, Smalltown, ST",
+    "website": "https://greentech.example.com",
+    "membership": "silver"
+  },
+  {
+    "companyName": "Harbor Supplies",
+    "logo": "images/harbor.svg",
+    "phone": "(555) 867-5309",
+    "address": "200 Dock Rd, Harborcity, HC",
+    "website": "https://harborsupplies.example.com",
+    "membership": "bronze"
+  },
+  {
+    "companyName": "Maple Consulting",
+    "logo": "images/maple.svg",
+    "phone": "(555) 404-0202",
+    "address": "45 Oak Ave, Smalltown, ST",
+    "website": "https://mapleconsulting.example.com",
+    "membership": "gold"
+  },
+  {
+    "companyName": "Blue River Tours",
+    "logo": "images/blueriver.svg",
+    "phone": "(555) 301-9000",
+    "address": "1 Riverside Ln, Townsville, TS",
+    "website": "https://blueriver.example.com",
+    "membership": "silver"
+  }
+]

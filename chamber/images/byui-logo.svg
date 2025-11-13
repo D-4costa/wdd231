@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" width="200" height="40">
+  <rect width="200" height="40" rx="6" fill="#fff0f4"/>
+  <text x="16" y="26" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6b5b5b">BYU-I</text>
+  <text x="72" y="26" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#6b5b5b">Chamber</text>
+</svg>

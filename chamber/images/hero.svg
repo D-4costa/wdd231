@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" preserveAspectRatio="xMidYMid slice">
+  <rect width="1200" height="400" fill="#fff7fb"/>
+  <g transform="translate(70,60)">
+    <circle cx="120" cy="80" r="100" fill="#ffdfee"/>
+    <rect x="260" y="20" width="760" height="240" rx="20" fill="#fff"/>
+    <text x="300" y="120" font-family="Arial" font-size="42" fill="#6b5b5b">Welcome to the Chamber</text>
+    <text x="300" y="170" font-family="Arial" font-size="20" fill="#6b5b5b">Supporting local business and community connections</text>
+  </g>
+</svg>
