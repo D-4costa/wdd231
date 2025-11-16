@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thank you | PinkVille Chamber</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap"><a class="brand" href="index.html">PinkVille Chamber of Commerce</a></div></header>
+<main class="wrap content">
+  <h1>Thank you for your application</h1>
+  <p id="message">Loading submitted data…</p>
+  <p><a href="join.html">Return to Join page</a></p>
+</main>
+<footer class="site-footer"><div class="wrap"><p class="credit">WDD231 Class Project — Danielle Acosta</p></div></footer>
+<script>
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const first = params.get('first') || '';
+  const last = params.get('last') || '';
+  const email = params.get('email') || '';
+  const phone = params.get('phone') || '';
+  const org = params.get('org') || '';
+  const ts = params.get('timestamp') || '';
+  const out = document.getElementById('message');
+  out.innerHTML = "<strong>Name:</strong> " + escapeHtml(first) + " " + escapeHtml(last) + "<br>" +
+                  "<strong>Email:</strong> " + escapeHtml(email) + "<br>" +
+                  "<strong>Phone:</strong> " + escapeHtml(phone) + "<br>" +
+                  "<strong>Organization:</strong> " + escapeHtml(org) + "<br>" +
+                  "<strong>Submitted:</strong> " + escapeHtml(ts);
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+})();
+</script>
+</body>
+</html>
