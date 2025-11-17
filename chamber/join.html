@@ -11,6 +11,7 @@
 
 <!-- Favicon -->
 <link rel="icon" href="images/favicon.png" type="image/png">
+
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +27,9 @@
 <meta property="og:image" content="https://d-4costa.github.io/wdd231/chamber/preview.jpg">
 <meta property="og:url" content="https://d-4costa.github.io/wdd231/chamber/join.html">
 <meta property="og:type" content="website">
+
+<!-- JS -->
+<script src="scripts/join.js" defer></script>
 
 </head>
 
@@ -78,15 +82,15 @@
         <input type="text" name="org" id="org" required title="Organization name" autocomplete="organization">
       </label>
 
-<label for="level">Membership Level
-  <select name="level" id="level" title="Membership level" required>
-    <option value="" disabled selected hidden>Select membership level</option>
-    <option value="np">NP Membership (np)</option>
-    <option value="bronze">Bronze Membership (bronze)</option>
-    <option value="silver">Silver Membership (silver)</option>
-    <option value="gold">Gold Membership (gold)</option>
-  </select>
-</label>
+      <label for="level">Membership Level
+        <select name="level" id="level" title="Membership level" required>
+          <option value="" disabled selected hidden>Select membership level</option>
+          <option value="np">NP Membership (np)</option>
+          <option value="bronze">Bronze Membership (bronze)</option>
+          <option value="silver">Silver Membership (silver)</option>
+          <option value="gold">Gold Membership (gold)</option>
+        </select>
+      </label>
 
       <label>Description
         <textarea name="desc" id="desc" title="Business description" rows="4"></textarea>
@@ -189,6 +193,6 @@
   </div>
 </footer>
 
-<script src="scripts/join.js" defer></script>
 </body>
 </html>
+
