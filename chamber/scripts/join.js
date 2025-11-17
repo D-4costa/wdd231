@@ -2,7 +2,7 @@
 (() => {
   // ====== Timestamp ======
   const tsInput = document.getElementById('timestamp');
-  if (tsInput) tsInput.value = new Date().toISOString();
+  if (tsInput) tsInput.value = new Date().toISOString(); // sobrescribe valor inicial
 
   // ====== Menu Toggle ======
   const menuToggle = document.getElementById('menuToggle');
@@ -43,7 +43,7 @@
         e.preventDefault();
         form.reportValidity();
       } else if (tsInput) {
-        tsInput.value = new Date().toISOString();
+        tsInput.value = new Date().toISOString(); // actualiza timestamp al enviar
       }
     });
   }
