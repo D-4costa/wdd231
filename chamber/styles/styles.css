@@ -1,36 +1,21 @@
-:root {
-  --pink-1: #f7cfe6; /* background areas */ 
-  --pink-2: #ffb6d9; /* header */ 
-  --text: #222222; 
-  --card: #ffeef7; 
-  --maxw: 980px; 
-  --accent: #e89ec2; 
-}
+/* ===========================
+   Layout / Components
+   =========================== */
 
-* { box-sizing: border-box; }
-
-/* BODY */
-body {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  background: var(--card);
-  color: var(--text);
-  margin: 0;
-  line-height: 1.4;
-}
-
-/* WRAPPER */
+/* Wrapper */
 .wrap {
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* HEADER */
+/* Header */
 .site-header {
   background: var(--pink-2);
   border-bottom: 4px solid var(--accent);
 }
 
+/* Brand */
 .brand {
   display: inline-block;
   font-weight: 700;
@@ -39,7 +24,10 @@ body {
   padding: 1rem 0;
 }
 
-.main-nav { float: right; }
+/* Main Navigation */
+.main-nav {
+  float: right;
+}
 
 .main-nav .menu {
   list-style: none;
@@ -52,7 +40,7 @@ body {
 .main-nav a {
   color: var(--text);
   text-decoration: none;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .main-nav a.active {
@@ -60,23 +48,32 @@ body {
   text-decoration: underline;
 }
 
-#menuToggle { display: none; }
+#menuToggle {
+  display: none;
+}
 
-/* MAIN CONTENT */
-.content h1 { margin-top: 0; }
+/* Main Content */
+.content h1 {
+  margin-top: 0;
+}
 
-/* FORM */
+/* ===========================
+   Form Styles
+   =========================== */
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  background: white;
+  background: var(--card);
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid #f4d9e6;
 }
 
-label { display: block; font-size: .95rem; }
+label {
+  display: block;
+  font-size: 0.95rem;
+}
 
 input[type="text"],
 input[type="email"],
@@ -84,23 +81,27 @@ input[type="tel"],
 select,
 textarea {
   width: 100%;
-  padding: .4rem;
+  padding: 0.4rem;
   border: 1px solid #e4cbd6;
   border-radius: 4px;
 }
 
-.form-actions { grid-column: 1 / -1; }
+.form-actions {
+  grid-column: 1 / -1;
+}
 
 input[type="submit"] {
   background: var(--pink-1);
   border: 1px solid var(--accent);
-  padding: .6rem .9rem;
+  padding: 0.6rem 0.9rem;
   border-radius: 6px;
   color: var(--text);
   cursor: pointer;
 }
 
-/* MEMBERSHIP CARDS */
+/* ===========================
+   Membership Cards
+   =========================== */
 .membership-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -114,25 +115,35 @@ input[type="submit"] {
   border-radius: 8px;
   border: 1px solid #f1cfe0;
   box-shadow: 0 2px 0 rgba(0,0,0,0.03);
-  animation: cardin .9s ease both;
+  animation: cardin 0.9s ease both;
 }
 
-.card h2 { margin: .2rem 0; }
+.card h2 {
+  margin: 0.2rem 0;
+}
 
 .open-modal {
   background: transparent;
   border: 1px solid var(--accent);
-  padding: .3rem .5rem;
+  padding: 0.3rem 0.5rem;
   border-radius: 4px;
 }
 
-/* CARD ANIMATION */
+/* Card Animation */
 @keyframes cardin {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: none; }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-/* MODALS */
+/* ===========================
+   Modals
+   =========================== */
 .modal {
   position: fixed;
   inset: 0;
@@ -142,7 +153,9 @@ input[type="submit"] {
   background: rgba(0,0,0,0.45);
 }
 
-.modal[aria-hidden="false"] { display: flex; }
+.modal[aria-hidden="false"] {
+  display: flex;
+}
 
 .modal-inner {
   background: white;
@@ -151,9 +164,13 @@ input[type="submit"] {
   border-radius: 8px;
 }
 
-.close-modal { margin-top: .5rem; }
+.close-modal {
+  margin-top: 0.5rem;
+}
 
-/* FOOTER */
+/* ===========================
+   Footer
+   =========================== */
 .site-footer {
   background: #ffdfee;
   padding: 1rem;
@@ -161,9 +178,13 @@ input[type="submit"] {
   border-top: 1px solid #f1cfe0;
 }
 
-address { font-style: normal; }
+address {
+  font-style: normal;
+}
 
-/* ACCESSIBILITY */
+/* ===========================
+   Accessibility
+   =========================== */
 .visually-hidden,
 .sr-only {
   position: absolute !important;
@@ -173,10 +194,16 @@ address { font-style: normal; }
   clip-path: inset(1px);
 }
 
-/* MEDIA QUERIES */
+/* ===========================
+   Media Queries
+   =========================== */
 @media (max-width: 700px) {
-  .form-grid { grid-template-columns: 1fr; }
-  .membership-cards { grid-template-columns: 1fr; }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .membership-cards {
+    grid-template-columns: 1fr;
+  }
   .main-nav .menu {
     flex-direction: column;
     background: transparent;
@@ -185,7 +212,7 @@ address { font-style: normal; }
     display: inline-block;
     background: transparent;
     border: 1px solid transparent;
-    padding: .4rem;
+    padding: 0.4rem;
     border-radius: 4px;
   }
 }
