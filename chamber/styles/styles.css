@@ -162,12 +162,18 @@ input[type="submit"] {
   display: flex;
 }
 
+/* Modal contenido principal */
 .modal-inner {
   background: #ffffff; /* blanco puro */
   padding: 1rem;
   max-width: 420px;
   border-radius: 8px;
-  color: #000000; /* negro puro para texto */
+  color: #000000; /* texto negro sobre blanco */
+}
+
+/* Modal contenido sobre fondo negro */
+.modal-content-dark {
+  color: #ffffff; /* texto blanco sobre negro */
 }
 
 .close-modal {
