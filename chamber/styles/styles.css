@@ -1,4 +1,70 @@
 /* ===========================
+   Base / Reset
+   =========================== */
+
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin/padding */
+body, h1, h2, h3, h4, h5, h6, p,
+ul, ol, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Improve text rendering */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Images should scale */
+img, picture, video, canvas {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inputs inherit font */
+input, textarea, select, button {
+  font: inherit;
+}
+
+/* Links inherit color unless overwritten */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===========================
+   CSS Variables
+   =========================== */
+:root {
+  --pink-1: #f7cfe6; /* background areas */
+  --pink-2: #ffb6d9; /* header */
+  --accent: #e89ec2;
+  --text: #222222;
+  --card: #ffeef7;
+  --maxw: 980px;
+}
+
+/* ===========================
+   Base Body Styles
+   =========================== */
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background: var(--card);
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* ===========================
    Layout / Components
    =========================== */
 
@@ -30,11 +96,10 @@
 }
 
 .main-nav .menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav a {
@@ -131,14 +196,8 @@ input[type="submit"] {
 
 /* Card Animation */
 @keyframes cardin {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
 }
 
 /* ===========================
@@ -150,22 +209,32 @@ input[type="submit"] {
   display: none;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.45); /* overlay */
 }
 
 .modal[aria-hidden="false"] {
   display: flex;
 }
 
+/* Modal inner: texto oscuro sobre fondo blanco para WCAG AA */
 .modal-inner {
   background: white;
+  color: #222222;
   padding: 1rem;
   max-width: 420px;
   border-radius: 8px;
 }
 
+.modal-inner h3,
+.modal-inner p,
+.modal-inner li,
+.modal-inner button {
+  color: #222222; /* todos los elementos de texto */
+}
+
 .close-modal {
   margin-top: 0.5rem;
+  color: #222222;
 }
 
 /* ===========================
