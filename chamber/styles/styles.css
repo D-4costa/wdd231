@@ -67,21 +67,17 @@ body {
 /* ===========================
    Layout / Components
    =========================== */
-
-/* Wrapper */
 .wrap {
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* Header */
 .site-header {
   background: var(--pink-2);
   border-bottom: 4px solid var(--accent);
 }
 
-/* Brand */
 .brand {
   display: inline-block;
   font-weight: 700;
@@ -90,7 +86,6 @@ body {
   padding: 1rem 0;
 }
 
-/* Main Navigation */
 .main-nav {
   float: right;
 }
@@ -117,7 +112,6 @@ body {
   display: none;
 }
 
-/* Main Content */
 .content h1 {
   margin-top: 0;
 }
@@ -216,7 +210,7 @@ input[type="submit"] {
   display: flex;
 }
 
-/* Modal inner: texto oscuro sobre fondo blanco para WCAG AA */
+/* Modal inner: WCAG AA contrast */
 .modal-inner {
   background: white;
   color: #222222;
@@ -229,7 +223,7 @@ input[type="submit"] {
 .modal-inner p,
 .modal-inner li,
 .modal-inner button {
-  color: #222222; /* todos los elementos de texto */
+  color: #222222;
 }
 
 .close-modal {
