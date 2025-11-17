@@ -11,8 +11,8 @@
 
 /* Header */
 .site-header {
-  background: var(--pink-2);
-  border-bottom: 4px solid var(--accent);
+  background: #e891b0; /* antes var(--pink-2) */
+  border-bottom: 4px solid #c25d8e; /* antes var(--accent) */
 }
 
 /* Brand */
@@ -20,7 +20,7 @@
   display: inline-block;
   font-weight: 700;
   text-decoration: none;
-  color: var(--text);
+  color: #222222; /* texto oscuro, ya cumple */
   padding: 1rem 0;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .main-nav a {
-  color: var(--text);
+  color: #222222;
   text-decoration: none;
   padding: 0.5rem;
 }
@@ -64,7 +64,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  background: var(--card);
+  background: #fff0f5; /* antes var(--card) */
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid #f4d9e6;
@@ -91,11 +91,11 @@ textarea {
 }
 
 input[type="submit"] {
-  background: var(--pink-1);
-  border: 1px solid var(--accent);
+  background: #f4c0d6; /* antes var(--pink-1) */
+  border: 1px solid #c25d8e; /* antes var(--accent) */
   padding: 0.6rem 0.9rem;
   border-radius: 6px;
-  color: var(--text);
+  color: #222222; /* texto oscuro */
   cursor: pointer;
 }
 
@@ -110,7 +110,7 @@ input[type="submit"] {
 }
 
 .card {
-  background: var(--pink-1);
+  background: #f4c0d6; /* antes var(--pink-1) */
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid #f1cfe0;
@@ -124,7 +124,7 @@ input[type="submit"] {
 
 .open-modal {
   background: transparent;
-  border: 1px solid var(--accent);
+  border: 1px solid #c25d8e; /* antes var(--accent) */
   padding: 0.3rem 0.5rem;
   border-radius: 4px;
 }
@@ -150,7 +150,7 @@ input[type="submit"] {
   display: none;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.85); /* más oscuro para texto gris */
 }
 
 .modal[aria-hidden="false"] {
@@ -158,10 +158,11 @@ input[type="submit"] {
 }
 
 .modal-inner {
-  background: white;
+  background: #ffffff;
   padding: 1rem;
   max-width: 420px;
   border-radius: 8px;
+  color: #222222; /* aseguro contraste */
 }
 
 .close-modal {
