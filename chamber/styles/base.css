@@ -20,7 +20,23 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-/* Set default font and colors (matches your style) */
+/* ===========================
+   CSS Variables
+   =========================== */
+
+:root {
+  --pink-1: #f7cfe6; /* background areas */
+  --pink-2: #ffb6d9; /* header */
+  --accent: #e89ec2;
+  --text: #222222;
+  --card: #ffeef7;
+  --maxw: 980px;
+}
+
+/* ===========================
+   Base Body Styles
+   =========================== */
+
 body {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   background: var(--card);
@@ -48,17 +64,4 @@ input, textarea, select, button {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-/* ===========================
-   CSS Variables (same palette)
-   =========================== */
-
-:root {
-  --pink-1: #f7cfe6; /* background areas */
-  --pink-2: #ffb6d9; /* header */
-  --accent: #e89ec2;
-  --text: #222222;
-  --card: #ffeef7;
-  --maxw: 980px;
 }
