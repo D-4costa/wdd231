@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chamber Discover — Discover Your Area</title>
+  <meta name="description" content="Discover local attractions and points of interest. Chamber of Commerce project page." />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+      <div class="brand">
+        <img src="images/place1.webp" alt="BYU-I logo placeholder">
+        <div>
+          <div style="font-size:0.9rem;color:#444">WDD 231: Web Frontend Development I</div>
+          <div style="font-size:1.1rem;font-weight:700">Chamber Discover Page</div>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">W1</a></li>
+          <li><a href="#">W2</a></li>
+          <li><a href="#">W3</a></li>
+          <li><a href="#">W4</a></li>
+          <li><a href="#">W5</a></li>
+          <li><a href="#">W6</a></li>
+          <li><a href="#">W7</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="discover-grid">
+      <div class="intro">
+        <h1>Discover the Area</h1>
+        <p>This page highlights representative and factual information about the area, including local points of interest that may appeal to prospective chamber members and visitors.</p>
+        <p>Use the cards below to learn more about each place. Images are lazy loaded, and layout adapts to small, medium, and large screens using named grid areas.</p>
+      </div>
+
+      <aside class="message-area">
+        <div class="card" role="status" aria-live="polite" id="visit-message">Checking visit info...</div>
+      </aside>
+
+      <section class="cards" id="cards" aria-live="polite" aria-label="Points of interest">
+        <!-- Cards are injected here by scripts/main.js (module) -->
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>Site created for W05: Chamber Discover Page — Danielle Acosta</div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
