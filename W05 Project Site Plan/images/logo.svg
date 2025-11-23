@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120">
+<rect rx="18" width="400" height="120" fill="#fff8e5"/>
+<g transform="translate(18,16)">
+  <circle cx="40" cy="40" r="28" fill="#d98324"/>
+  <text x="84" y="52" font-family="Poppins, sans-serif" font-size="28" fill="#4a6b57">Sun Paws Shelter</text>
+</g>
+</svg>

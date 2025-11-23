@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Adopt — Sun Paws Shelter</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <img src="images/logo.svg" alt="Sun Paws Shelter logo" class="logo">
+    <div>
+      <h1>Adoption Request</h1>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="pets.html">Pets for Adoption</a>
+    <a href="adopt.html" aria-current="page">Adopt</a>
+    <a href="site-plan.html">Site Plan</a>
+  </nav>
+</header>
+
+<main class="container narrow">
+  <h2>Adoption Application</h2>
+  <p class="muted">Please complete the form below to submit an adoption request. Your data is stored locally for demo purposes.</p>
+
+  <form id="adopt-form" action="#" method="post" novalidate>
+    <label for="petName">Pet Name (if applicable)</label>
+    <input id="petName" name="petName" type="text" placeholder="e.g. Luna">
+
+    <label for="fullname">Full Name</label>
+    <input id="fullname" name="fullname" type="text" required>
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required>
+
+    <label for="phone">Phone</label>
+    <input id="phone" name="phone" type="tel">
+
+    <label for="message">Why do you want to adopt?</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <div class="form-actions">
+      <button class="btn" type="submit">Submit Application</button>
+      <button class="btn ghost" type="button" id="save-local">Save Draft Locally</button>
+    </div>
+
+    <p id="form-status" class="muted" aria-live="polite"></p>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <p>Sun Paws Shelter &copy; 2025</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

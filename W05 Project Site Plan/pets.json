@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Luna",
+    "age": "2 years",
+    "breed": "Mixed Breed (Dog)",
+    "short": "Playful and loving. Great with other dogs.",
+    "description": "Luna is friendly, house-trained, and vaccinated. She loves walks and cuddles.",
+    "image": "images/dog.svg",
+    "size": "Medium",
+    "sex": "Female",
+    "location": "Main Shelter"
+  },
+  {
+    "id": 2,
+    "name": "Mika",
+    "age": "1 year",
+    "breed": "Domestic Short Hair (Cat)",
+    "short": "Curious lap cat who purrs non-stop.",
+    "description": "Mika is shy at first but warms up quickly. Great for apartment living.",
+    "image": "images/cat.svg",
+    "size": "Small",
+    "sex": "Male",
+    "location": "Foster Home"
+  }
+]

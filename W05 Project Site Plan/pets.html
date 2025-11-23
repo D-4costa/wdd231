@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sun Paws Shelter — Pets for Adoption</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <img src="images/logo.svg" alt="Sun Paws Shelter logo" class="logo">
+    <div>
+      <h1>Sun Paws Shelter</h1>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="pets.html" aria-current="page">Pets for Adoption</a>
+    <a href="adopt.html">Adopt</a>
+    <a href="site-plan.html">Site Plan</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Pets for Adoption</h1>
+  <p class="muted">Click a pet card to view details and begin an adoption request.</p>
+
+  <section id="pets-grid" class="pets-grid" aria-live="polite"></section>
+
+  <!-- Modal -->
+  <div id="pet-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h2 id="modal-title"></h2>
+      <div id="modal-image"></div>
+      <p id="modal-desc"></p>
+      <ul id="modal-list"></ul>
+      <p><button id="adopt-btn" class="btn">Start Adoption</button></p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>Sun Paws Shelter &copy; 2025</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
