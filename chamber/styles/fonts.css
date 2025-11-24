@@ -1,4 +1,6 @@
-/* Font Family for the whole website */
+/* ==========================
+   Font Family for the whole website
+========================== */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
