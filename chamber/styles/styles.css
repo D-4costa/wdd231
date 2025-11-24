@@ -2,6 +2,7 @@
    Root Variables
 ========================== */
 :root {
+  /* Colors */
   --brand: #F9A8D4;
   --brand-light: #FBCFE8;
   --brand-dark: #6B21A8;
@@ -9,6 +10,8 @@
   --bg: #FDF2F8;
   --card: #F3E8FF;
   --accent: #C4B5FD;
+
+  /* Layout & Design */
   --radius: 12px;
   --max-width: 1200px;
   --gap: 1rem;
@@ -18,15 +21,10 @@
    Global Styles
 ========================== */
 * { box-sizing: border-box; }
-html, body { height: 100%; }
-
+html, body { height: 100%; margin: 0; }
 body {
-  font-family: var(--main-font);
-  margin: 0;
   background: linear-gradient(180deg, var(--bg), #ffffff);
   color: var(--muted);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
 }
 
@@ -121,26 +119,16 @@ body {
   display: grid;
   gap: var(--gap);
   grid-template-columns: 1fr;
-  grid-template-areas:
-    "card1"
-    "card2"
-    "card3"
-    "card4"
-    "card5"
-    "card6"
-    "card7"
-    "card8";
   margin-top: 1rem;
 }
 
 .card {
   background: var(--card);
   border-radius: var(--radius);
-  padding: 0;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(203,164,255,0.22);
   display: flex;
   flex-direction: column;
+  box-shadow: 0 6px 18px rgba(203,164,255,0.22);
 }
 
 .card figure {
@@ -151,10 +139,9 @@ body {
 
 .card img {
   width: 100%;
-  height: auto;
   display: block;
-  transition: transform .35s ease, filter .35s ease, opacity .35s ease;
   object-fit: cover;
+  transition: transform .35s ease, filter .35s ease, opacity .35s ease;
 }
 
 .card .card-body {
@@ -182,7 +169,7 @@ body {
 .card .actions {
   display: flex;
   justify-content: flex-end;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 1rem;
 }
 
 /* ==========================
@@ -222,11 +209,6 @@ body {
 @media (min-width: 641px) {
   .discover-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "card1 card2"
-      "card3 card4"
-      "card5 card6"
-      "card7 card8";
   }
 
   .card figure::after {
@@ -234,8 +216,8 @@ body {
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.08));
-    transition: opacity .3s ease;
     opacity: 0;
+    transition: opacity .3s ease;
   }
 
   .card:hover figure::after {
@@ -251,9 +233,6 @@ body {
 @media (min-width: 1025px) {
   .discover-grid {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      "card1 card2 card3 card4"
-      "card5 card6 card7 card8";
   }
 }
 
@@ -276,4 +255,3 @@ body {
   font-size: .9rem;
   color: var(--muted);
 }
-
