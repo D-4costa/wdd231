@@ -1,68 +1,67 @@
 export const places = [
   {
-    id: 1,
-    title: "Place 1",
-    address: "101 Main St, YourTown",
-    description: "A short, friendly description of Place 1. A nice spot for visitors and locals alike.",
-    image: "./images/place1.webp",
-    alt: "Photo of Place 1"
+    "id": 1,
+    "title": "Horizon Overlook",
+    "address": "12 Panorama Street, Villa Serena",
+    "description": "A high viewpoint offering sweeping views of the entire city. Perfect for sunset photos and peaceful walks.",
+    "image": "../images/place1.webp",
+    "alt": "Photo of Horizon Overlook"
   },
   {
-    id: 2,
-    title: "Place 2",
-    address: "102 Main St, YourTown",
-    description: "A short, friendly description of Place 2. A nice spot for visitors and locals alike.",
-    image: "./images/place2.webp",
-    alt: "Photo of Place 2"
+    "id": 2,
+    "title": "Sunflower Park",
+    "address": "244 Central Avenue, Sunfields",
+    "description": "A bright, cheerful park filled with sunflowers during the summer season. Ideal for picnics and family outings.",
+    "image": "../images/place2.webp",
+    "alt": "Photo of Sunflower Park"
   },
   {
-    id: 3,
-    title: "Place 3",
-    address: "103 Main St, YourTown",
-    description: "A short, friendly description of Place 3. A nice spot for visitors and locals alike.",
-    image: "./images/place3.webp",
-    alt: "Photo of Place 3"
+    "id": 3,
+    "title": "Urban History Museum",
+    "address": "8th Avenue #21-04, Historic Center",
+    "description": "A museum dedicated to the city’s development, featuring interactive exhibits and vintage photography.",
+    "image": "../images/place3.webp",
+    "alt": "Photo of Urban History Museum"
   },
   {
-    id: 4,
-    title: "Place 4",
-    address: "104 Main St, YourTown",
-    description: "A short, friendly description of Place 4. A nice spot for visitors and locals alike.",
-    image: "./images/place4.webp",
-    alt: "Photo of Place 4"
+    "id": 4,
+    "title": "Old Market Plaza",
+    "address": "7 Main Square, San Arcadio",
+    "description": "A traditional open-air market where local artisans sell fresh produce and unique handmade goods.",
+    "image": "../images/place4.webp",
+    "alt": "Photo of Old Market Plaza"
   },
   {
-    id: 5,
-    title: "Place 5",
-    address: "105 Main St, YourTown",
-    description: "A short, friendly description of Place 5. A nice spot for visitors and locals alike.",
-    image: "./images/place5.webp",
-    alt: "Photo of Place 5"
+    "id": 5,
+    "title": "Bird Garden",
+    "address": "55 Greenway Road, Forest Heights",
+    "description": "A natural sanctuary home to exotic birds and shaded walking trails surrounded by lush vegetation.",
+    "image": "../images/place5.webp",
+    "alt": "Photo of Bird Garden"
   },
   {
-    id: 6,
-    title: "Place 6",
-    address: "106 Main St, YourTown",
-    description: "A short, friendly description of Place 6. A nice spot for visitors and locals alike.",
-    image: "./images/place6.webp",
-    alt: "Photo of Place 6"
+    "id": 6,
+    "title": "Clear River Walk",
+    "address": "102 Water Route, Riverside",
+    "description": "A scenic trail running along the riverbank, popular for cycling, walking, and wildlife spotting.",
+    "image": "../images/place6.webp",
+    "alt": "Photo of Clear River Walk"
   },
   {
-    id: 7,
-    title: "Place 7",
-    address: "107 Main St, YourTown",
-    description: "A short, friendly description of Place 7. A nice spot for visitors and locals alike.",
-    image: "./images/place7.webp",
-    alt: "Photo of Place 7"
+    "id": 7,
+    "title": "Aurora Cultural Center",
+    "address": "40th Diagonal #15-33, Aurora District",
+    "description": "A community space offering workshops, cultural events, and a modern public library.",
+    "image": "../images/place7.webp",
+    "alt": "Photo of Aurora Cultural Center"
   },
   {
-    id: 8,
-    title: "Place 8",
-    address: "108 Main St, YourTown",
-    description: "A short, friendly description of Place 8. A nice spot for visitors and locals alike.",
-    image: "./images/place8.webp",
-    alt: "Photo of Place 8"
+    "id": 8,
+    "title": "Bridge of Sighs",
+    "address": "88 Old Road, Old Hill",
+    "description": "A historic bridge known for local legends and its charming rustic architecture.",
+    "image": "../images/place8.webp",
+    "alt": "Photo of Bridge of Sighs"
   }
 ];
-
 export default places;
