@@ -15,7 +15,7 @@ html, body { height: 100%; }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   background: linear-gradient(180deg, var(--bg), #ffffff);
   color: var(--muted);
   -webkit-font-smoothing: antialiased;
