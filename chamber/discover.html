@@ -11,15 +11,23 @@
   <!-- Favicon -->
   <link rel="icon" href="./images/favicon.png" type="image/png">
 
+  <!-- Google Fonts (required) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Files (must be 2) -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
+
   <!-- Open Graph Metadata -->
   <meta property="og:title" content="Discover Local Attractions — Sample Chamber Project">
   <meta property="og:description" content="Explore hand-selected points of interest with photos, descriptions, and helpful details in this WDD 231 Chamber of Commerce project.">
   <meta property="og:image" content="https://d-4costa.github.io/wdd231/chamber/og-image.jpg">
   <meta property="og:url" content="https://wdd231.github.io/chamber/discover.html">
   <meta property="og:type" content="website">
-
-  <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
   <header class="site-header container">
     <div class="logo">
@@ -58,7 +66,7 @@
       <div><button class="btn" id="dismiss-visit">Dismiss</button></div>
     </div>
 
-<section class="discover-grid" aria-label="Places of interest">
+    <section class="discover-grid" aria-label="Places of interest">
       <!-- Cards will be injected here by scripts/discover.js -->
     </section>
   </main>
@@ -71,3 +79,4 @@
   <script type="module" src="./scripts/discover.js"></script>
 </body>
 </html>
+
