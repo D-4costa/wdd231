@@ -1,6 +1,10 @@
-:root{
+/* ==========================
+   Root Variables
+========================== */
+:root {
   --brand: #F9A8D4;
   --brand-light: #FBCFE8;
+  --brand-dark: #6B21A8;
   --muted: #4B425C;
   --bg: #FDF2F8;
   --card: #F3E8FF;
@@ -10,12 +14,14 @@
   --gap: 1rem;
 }
 
+/* ==========================
+   Global Styles
+========================== */
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 
 body {
   margin: 0;
-  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   background: linear-gradient(180deg, var(--bg), #ffffff);
   color: var(--muted);
   -webkit-font-smoothing: antialiased;
@@ -29,6 +35,9 @@ body {
   padding: 1rem;
 }
 
+/* ==========================
+   Header & Navigation
+========================== */
 .site-header {
   display: flex;
   align-items: center;
@@ -80,6 +89,9 @@ body {
   color: white;
 }
 
+/* ==========================
+   Hero Section
+========================== */
 .page-hero {
   background: linear-gradient(90deg, rgba(249,168,212,0.15), rgba(195,181,253,0.10));
   border-radius: 12px;
@@ -93,7 +105,7 @@ body {
 .page-hero h1 {
   margin: 0;
   font-size: 1.5rem;
-  color: #6B21A8;
+  color: var(--brand-dark);
 }
 
 .page-hero p {
@@ -101,6 +113,9 @@ body {
   color: var(--muted);
 }
 
+/* ==========================
+   Discover Grid & Cards
+========================== */
 .discover-grid {
   display: grid;
   gap: var(--gap);
@@ -148,7 +163,7 @@ body {
 .card h2 {
   margin: 0 0 .5rem 0;
   font-size: 1.05rem;
-  color: #6B21A8;
+  color: var(--brand-dark);
 }
 
 .card address {
@@ -160,7 +175,7 @@ body {
 
 .card p {
   margin: 0 0 .75rem 0;
-  color: #4B425C;
+  color: var(--muted);
 }
 
 .card .actions {
@@ -169,6 +184,9 @@ body {
   padding: 0 1rem 1rem 1rem;
 }
 
+/* ==========================
+   Buttons
+========================== */
 .btn {
   background: var(--brand);
   color: white;
@@ -182,6 +200,9 @@ body {
   outline: 3px solid rgba(249,168,212,0.25);
 }
 
+/* ==========================
+   Visit Message
+========================== */
 .visit-msg {
   background: linear-gradient(90deg, rgba(195,181,253,0.18), rgba(249,168,212,0.12));
   border-radius: 10px;
@@ -194,6 +215,9 @@ body {
   color: var(--muted);
 }
 
+/* ==========================
+   Media Queries
+========================== */
 @media (min-width: 641px) {
   .discover-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -232,6 +256,9 @@ body {
   }
 }
 
+/* ==========================
+   Footer
+========================== */
 .site-footer {
   margin-top: 2rem;
   padding: 1rem 0;
