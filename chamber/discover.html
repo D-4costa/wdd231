@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Discover — Sample Chamber</title>
+  <meta name="description" content="Discover local attractions and points of interest. Chamber of Commerce project page.">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <header class="site-header container">
+    <div class="logo">
+      <img src="./images/place1.webp" alt="BYU-I logo placeholder">
+      <div>
+        <div class="brand-title">Chamber Discover — Sample Chamber</div>
+        <div class="small">Discover your area</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./discover.html">Discover</a></li>
+        <li><a href="#">W1</a></li>
+        <li><a href="#">W2</a></li>
+        <li><a href="#">W3</a></li>
+        <li><a href="#">W4</a></li>
+        <li><a href="#">W5</a></li>
+        <li><a href="#">W6</a></li>
+        <li><a href="#">W7</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="main">
+    <section class="page-hero" aria-labelledby="discover-title">
+      <div>
+        <h1 id="discover-title">Discover the Area</h1>
+        <p>Explore eight selected places of interest — each with a photo, address, and short description.</p>
+      </div>
+    </section>
+
+    <div class="visit-msg" role="status" aria-live="polite">
+      <div class="visit-text">Checking your last visit...</div>
+      <div><button class="btn" id="dismiss-visit">Dismiss</button></div>
+    </div>
+
+    <section class="discover-grid" aria-label="Places of interest" role="list">
+      <!-- Cards will be injected here by scripts/discover.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="small">© Example Chamber — Sample Project</div>
+    <div class="small">Made for WDD 231</div>
+  </footer>
+
+  <script type="module" src="./scripts/discover.js"></script>
+</body>
+</html>

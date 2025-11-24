@@ -1,0 +1,195 @@
+
+:root{
+  --brand: #5A67D8;
+  --brand-light: #7F9CFF;
+  --muted: #4A5568;
+  --bg: #F8FAFC;
+  --card: #FFFFFF;
+  --accent: #F6AD55;
+  --radius: 12px;
+  --max-width: 1200px;
+  --gap: 1rem;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,var(--bg), #ffffff);
+  color: #1A202C;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:1rem;
+}
+
+/* Header / Nav */
+.site-header{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  padding:1rem 0;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+}
+.logo img{width:64px;height:64px;border-radius:8px;object-fit:cover}
+.brand-title{font-weight:700;font-size:1.2rem;color:var(--brand)}
+
+.nav{
+  margin-left:auto;
+}
+.nav ul{
+  list-style:none;
+  display:flex;
+  gap:.5rem;
+  padding:0;
+  margin:0;
+}
+.nav a{
+  text-decoration:none;
+  padding:.5rem .75rem;
+  border-radius:8px;
+  color:var(--muted);
+}
+.nav a:hover, .nav a:focus{
+  background:var(--brand-light);
+  color:white;
+}
+
+/* Main heading */
+.page-hero{
+  background:linear-gradient(90deg, rgba(90,103,216,0.08), rgba(246,173,85,0.03));
+  border-radius:12px;
+  padding:1rem;
+  margin:1rem 0;
+  display:flex;
+  gap:1rem;
+  align-items:center;
+}
+.page-hero h1{margin:0;font-size:1.5rem}
+.page-hero p{margin:0;color:var(--muted)}
+
+/* Grid layout for cards - we will use named areas */
+.discover-grid{
+  display:grid;
+  gap:var(--gap);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  margin-top:1rem;
+}
+
+/* Card */
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:0;
+  overflow:hidden;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+  display:flex;
+  flex-direction:column;
+}
+.card figure{
+  margin:0;
+  position:relative;
+  overflow:hidden;
+}
+.card img{
+  width:100%;
+  height:auto;
+  display:block;
+  transition: transform .35s ease, filter .35s ease, opacity .35s ease;
+  object-fit:cover;
+}
+.card .card-body{padding:1rem}
+.card h2{margin:0 0 .5rem 0;font-size:1.05rem}
+.card address{font-style:normal;color:var(--muted);font-size:.95rem;margin-bottom:.5rem}
+.card p{margin:0 0 .75rem 0;color:#333}
+.card .actions{display:flex;justify-content:flex-end;padding:0 1rem 1rem 1rem}
+.btn{
+  background:var(--brand);
+  color:white;
+  padding:.5rem .75rem;
+  border-radius:10px;
+  border:0;
+  cursor:pointer;
+}
+.btn:focus{outline:3px solid rgba(90,103,216,0.15)}
+
+/* Visitor message bar */
+.visit-msg{
+  background:linear-gradient(90deg, rgba(246,173,85,0.12), rgba(90,103,216,0.06));
+  border-radius:10px;
+  padding:.75rem 1rem;
+  margin:1rem 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  color:var(--muted);
+}
+
+/* Responsive and named grid areas for medium and large screens */
+@media(min-width:641px){
+  .discover-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+}
+
+@media(min-width:1025px){
+  .discover-grid{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+  }
+}
+
+/* Hover effect applied only on larger screens */
+@media(min-width:641px){
+  .card figure::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.08));
+    transition:opacity .3s ease;
+    opacity:0;
+  }
+  .card:hover figure::after{opacity:1}
+  .card:hover img{ transform: scale(1.03) rotate(-0.5deg); filter:brightness(.98) saturate(1.02)}
+}
+
+/* Footer */
+.site-footer{
+  margin-top:2rem;
+  padding:1rem 0;
+  color:var(--muted);
+  border-top:1px solid rgba(15,23,42,0.04);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+.small{font-size:.9rem;color:var(--muted)}
