@@ -2,6 +2,10 @@
    Root Variables
 ========================== */
 :root {
+  /* Font */
+  --main-font: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+
+  /* Colors */
   --brand: #F9A8D4;
   --brand-light: #FBCFE8;
   --brand-dark: #6B21A8;
@@ -9,6 +13,8 @@
   --bg: #FDF2F8;
   --card: #F3E8FF;
   --accent: #C4B5FD;
+
+  /* Sizes */
   --radius: 12px;
   --max-width: 1200px;
   --gap: 1rem;
@@ -115,7 +121,7 @@ html, body {
 
 /* ==========================
    Discover Grid & Cards
-========================= */
+========================== */
 .discover-grid {
   display: grid;
   gap: var(--gap);
@@ -186,7 +192,7 @@ html, body {
 
 /* ==========================
    Buttons
-========================= */
+========================== */
 .btn {
   background: var(--brand);
   color: white;
@@ -202,7 +208,7 @@ html, body {
 
 /* ==========================
    Visit Message
-========================= */
+========================== */
 .visit-msg {
   background: linear-gradient(90deg, rgba(195,181,253,0.18), rgba(249,168,212,0.12));
   border-radius: 10px;
@@ -217,7 +223,7 @@ html, body {
 
 /* ==========================
    Media Queries
-========================= */
+========================== */
 @media (min-width: 641px) {
   .discover-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -258,7 +264,7 @@ html, body {
 
 /* ==========================
    Footer
-========================= */
+========================== */
 .site-footer {
   margin-top: 2rem;
   padding: 1rem 0;
