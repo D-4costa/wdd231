@@ -1,11 +1,4 @@
 /* ==========================
-   Font Family Variable
-========================== */
-:root {
-  --main-font: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-}
-
-/* ==========================
    Global Font Styles
 ========================== */
 body {
