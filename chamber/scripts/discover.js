@@ -27,6 +27,8 @@ function saveVisit() {
 // Card Builder
 // -----------------------------
 function buildCards(container) {
+  if (!container) return;
+
   places.forEach((p, idx) => {
     const card = document.createElement("article");
     card.className = "card";
@@ -89,8 +91,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const lastMs = last ? Number(last) : null;
 
   const msgEl = document.querySelector(".visit-text");
-  msgEl.textContent = formatVisitMessage(lastMs);
+  if (msgEl) msgEl.textContent = formatVisitMessage(lastMs);
 
   // Save for next visit
   saveVisit();
+
+  // Dismiss visit message
+  const dismissBtn = document.getElementById("dismiss-visit");
+  if (dismissBtn) {
+    dismissBtn.addEventListener("click", () => {
+      const visitMsg = document.querySelector(".visit-msg");
+      if (visitMsg) visitMsg.style.display = "none";
+    });
+  }
+
+  // Optional: auto-hide visit message after 8 seconds
+  const visitMsg = document.querySelector(".visit-msg");
+  if (visitMsg) {
+    setTimeout(() => {
+      visitMsg.style.transition = "opacity 0.5s ease";
+      visitMsg.style.opacity = 0;
+      setTimeout(() => visitMsg.style.display = "none", 500);
+    }, 8000);
+  }
 });
