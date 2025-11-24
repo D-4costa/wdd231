@@ -4,3 +4,12 @@
 :root {
   --main-font: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
+
+/* ==========================
+   Global Font Styles
+========================== */
+body {
+  font-family: var(--main-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
