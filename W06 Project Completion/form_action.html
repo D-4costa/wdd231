@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Submission — Pastel Sweets</title>
+  <meta name="description" content="Form submission page showing submitted contact information." />
+  <meta name="author" content="Danielle Acosta" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="container main-content">
+    <h1>Contact Submission</h1>
+    <p>This page displays the submitted contact form data (method=GET).</p>
+    <div id="results"></div>
+    <p><a href="index.html">Return home</a></p>
+  </main>
+
+  <script>
+    function parseQuery(qs) {
+      if (!qs) return {};
+      return Object.fromEntries(new URLSearchParams(qs));
+    }
+    const params = parseQuery(location.search);
+    const results = document.getElementById('results');
+
+    if (Object.keys(params).length === 0) {
+      results.innerHTML = '<p>No form data found. Submit the contact form from the home page.</p>';
+    } else {
+      const dl = document.createElement('dl');
+      for (const key of Object.keys(params)) {
+        const dt = document.createElement('dt'); dt.textContent = key;
+        const dd = document.createElement('dd'); dd.textContent = params[key];
+        dl.appendChild(dt); dl.appendChild(dd);
+      }
+      results.appendChild(dl);
+    }
+  </script>
+</body>
+</html>

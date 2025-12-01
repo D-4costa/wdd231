@@ -1,0 +1,77 @@
+:root{
+  --bg: #fff9fb; /* very light pink */
+  --accent: #ff6fa8; /* pastel pink */
+  --muted: #6b6b6b;
+  --card: #ffffff;
+  --max-width: 1100px;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);color:#222;line-height:1.45;
+}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+
+.site-header{background:transparent;padding:.5rem 0;position:sticky;top:0;backdrop-filter: blur(4px);z-index:20}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;color:var(--accent);text-decoration:none;font-size:1.25rem}
+
+.primary-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem;align-items:center}
+.primary-nav a{color:#222;text-decoration:none;padding:.25rem .5rem;border-radius:8px;font-weight:600}
+.primary-nav a.active, .primary-nav a:hover{background:rgba(255,111,160,0.09)}
+
+.nav-toggle{display:none;background:transparent;border:0;font-size:1.4rem;padding:.25rem}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+.main-content{padding:1rem 0}
+.hero{background:linear-gradient(180deg,#fff,#fff6fb);padding:2rem;border-radius:var(--radius);margin-bottom:1rem;box-shadow:var(--shadow)}
+.btn{display:inline-block;padding:.5rem 1rem;background:var(--accent);color:white;border-radius:10px;text-decoration:none;font-weight:700;border:0}
+
+.intro-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:1rem}
+.card{background:var(--card);border-radius:12px;padding:1rem;box-shadow:var(--shadow)}
+.card.small{padding:.75rem}
+
+.contact-form{display:grid;gap:.5rem;max-width:540px}
+.contact-form input,.contact-form textarea{padding:.5rem;border-radius:8px;border:1px solid #f1dbe2;background:#fff}
+.contact-form label{font-weight:600;font-size:.95rem}
+
+.collection{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card.recipe{display:flex;flex-direction:column;overflow:hidden}
+.card.recipe img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-bottom-left-radius:0;border-bottom-right-radius:0}
+.card.recipe .card-body{padding:0.75rem;display:flex;flex-direction:column;gap:.5rem}
+.meta{display:flex;justify-content:space-between;align-items:center;margin-top:auto;gap:.5rem}
+.card.recipe button{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:.4rem .6rem;border-radius:8px;font-weight:700}
+
+.site-footer{background:transparent;padding:1rem 0;margin-top:2rem}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:1rem;background:rgba(0,0,0,0.45)}
+.modal[aria-hidden="false"]{display:flex}
+.modal-content{background:white;border-radius:12px;padding:1rem;max-width:720px;width:100%;position:relative;outline:0}
+.modal-close{position:absolute;right:.5rem;top:.5rem;border:0;background:transparent;font-size:1.25rem}
+
+/* Controls */
+.controls{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:1rem}
+.controls label{font-size:.9rem}
+
+/* Responsive nav */
+@media (max-width:800px){
+  .primary-nav{position:absolute;right:1rem;top:64px;background:white;padding:1rem;border-radius:8px;display:none;box-shadow:0 8px 24px rgba(0,0,0,0.12)}
+  .primary-nav[aria-hidden="false"]{display:block}
+  .nav-toggle{display:inline-block}
+}
+
+/* Layout helpers */
+body{display:flex;flex-direction:column;min-height:100vh}
+main{flex:1}
+
+/* Small screens */
+@media (max-width:420px){
+  .controls{flex-direction:column;align-items:stretch}
+  .intro-cards{grid-template-columns:1fr}
+}

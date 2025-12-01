@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Pastel Sweets</title>
+  <meta name="description" content="About the Pastel Sweets blog and attributions. Project by Danielle Acosta." />
+  <meta name="author" content="Danielle Acosta" />
+
+  <link rel="icon" 
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect rx='18' width='100' height='100' fill='%23fff0f6'/%3E%3Ctext x='50' y='56' font-size='36' text-anchor='middle' fill='%23ff6fa8' font-family='Arial'%3EPS%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Pastel Sweets</a>
+      <button id="nav-toggle-3" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav-3">
+        <span class="sr-only">Toggle navigation</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="primary-nav-3" class="primary-nav" role="navigation" aria-hidden="true">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="form_action.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <h1>About Pastel Sweets</h1>
+    <p>Hi! I'm <strong>Danielle Acosta</strong>. This blog collects approachable dessert recipes with pastel vibes — simple, sweet, and photographed with soft tones. The project demonstrates accessible HTML, CSS, and JavaScript features required by the course.</p>
+
+    <section id="attributions">
+      <h2>Attributions</h2>
+      <ul>
+        <li>Images sourced from Pinterest</li>
+        <li>Icons and small assets are embedded as data URIs</li>
+        <li>Project created for coursework — original content by Danielle Acosta</li>        
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Made by <strong>Danielle Acosta</strong>. &copy; <span id="year3"></span></p>
+      <p><a href="https://example.com/video-demo" target="_blank" rel="noopener">Video demo</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year3').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pastel Sweets — Recipes</title>
+  <meta name="description" content="Recipes list: discover pastel-themed desserts. Search, filter, and save favorites." />
+  <meta name="author" content="Danielle Acosta" />
+
+  <meta property="og:title" content="Pastel Sweets — Recipes" />
+  <meta property="og:description" content="Browse dessert recipes and view details." />
+
+  <link rel="icon" 
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect rx='18' width='100' height='100' fill='%23fff0f6'/%3E%3Ctext x='50' y='56' font-size='36' text-anchor='middle' fill='%23ff6fa8' font-family='Arial'%3EPS%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Pastel Sweets</a>
+      <button id="nav-toggle-2" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="primary-nav-2" class="primary-nav" role="navigation" aria-hidden="true">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="recipes.html">Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="form_action.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <h1>Recipes</h1>
+
+    <section class="controls" aria-label="recipe controls">
+      <label for="category-select">Category:</label>
+      <select id="category-select"><option value="all">All</option></select>
+
+      <label for="search-input">Search:</label>
+      <input id="search-input" type="search" placeholder="search titles or ingredients" />
+
+      <button id="show-favorites">Show favorites</button>
+      <button id="clear-favorites">Clear favorites</button>
+    </section>
+
+    <section id="collection" class="collection" aria-live="polite">
+      <!-- recipes injected by JS -->
+    </section>
+  </main>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-content" tabindex="-1">
+      <button id="modal-close" class="modal-close" aria-label="Close modal">×</button>
+      <h2 id="modal-title"></h2>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Made by <strong>Danielle Acosta</strong>. &copy; <span id="year2"></span></p>
+      <p><a href="https://example.com/video-demo" target="_blank" rel="noopener">Video demo</a> • <a href="about.html#attributions">Attributions</a></p>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initRecipes } from './js/main.js';
+    import { initModal } from './js/modal.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initModal();
+      initRecipes();
+      document.getElementById('year2').textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "Strawberry Cloud Cake",
+    "category": "cakes",
+    "desc": "Light sponge with whipped pink frosting",
+    "ingredients": ["flour", "sugar", "eggs", "strawberries", "cream"],
+    "time": "45 min",
+    "servings": "8",
+    "image": "https://i.pinimg.com/736x/7d/f7/4a/7df74a0c2a7bb4f91a07f1ac018ecbc5.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Vanilla Macarons",
+    "category": "cookies",
+    "desc": "Delicate almond shells with vanilla buttercream",
+    "ingredients": ["almond flour", "sugar", "egg whites", "vanilla"],
+    "time": "1 hr",
+    "servings": "12",
+    "image": "https://i.pinimg.com/1200x/41/f6/11/41f611ab6dcd76d42d5c7ab7a231641a.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Rosewater Cupcakes",
+    "category": "cupcakes",
+    "desc": "Soft cupcakes scented with rosewater",
+    "ingredients": ["flour", "sugar", "butter", "eggs", "rosewater"],
+    "time": "35 min",
+    "servings": "12",
+    "image": "https://i.pinimg.com/736x/d7/59/d8/d759d822d9cfae922511179c053d194a.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Pastel Meringues",
+    "category": "cookies",
+    "desc": "Crisp, airy meringue kisses",
+    "ingredients": ["egg whites", "sugar", "cream of tartar"],
+    "time": "2 hrs (slow)",
+    "servings": "24",
+    "image": "https://i.pinimg.com/474x/49/51/47/49514700194b91f3b9ee0c8c64bccdf5.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Lemon Drizzle Bars",
+    "category": "bars",
+    "desc": "Tangy lemon bars with shortbread base",
+    "ingredients": ["flour", "butter", "sugar", "lemons", "eggs"],
+    "time": "50 min",
+    "servings": "9",
+    "image": "https://i.pinimg.com/736x/68/ad/6a/68ad6ab6cb93012076fe6bf90ae157d3.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Cotton Candy Donuts",
+    "category": "donuts",
+    "desc": "Yeasted donuts with cotton-candy glaze",
+    "ingredients": ["flour", "yeast", "milk", "sugar", "oil"],
+    "time": "2 hrs",
+    "servings": "10",
+    "image": "https://i.pinimg.com/1200x/dd/48/cc/dd48cc09bffe1ffc7809e9ab5077201c.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Honey Almond Tart",
+    "category": "tart",
+    "desc": "Mini tart with honey-almond filling",
+    "ingredients": ["flour", "butter", "honey", "almonds", "eggs"],
+    "time": "1 hr",
+    "servings": "6",
+    "image": "https://i.pinimg.com/1200x/b1/fb/83/b1fb83bac09b04aee34954a296928a89.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Blueberry Galette",
+    "category": "pies",
+    "desc": "Rustic galette filled with berries",
+    "ingredients": ["flour", "butter", "blueberries", "sugar"],
+    "time": "1 hr",
+    "servings": "6",
+    "image": "https://i.pinimg.com/1200x/2c/be/19/2cbe1949ee7059c0933b3d352bc9c2fd.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Matcha Roll",
+    "category": "cakes",
+    "desc": "Swiss roll with matcha cream",
+    "ingredients": ["flour", "eggs", "matcha", "cream", "sugar"],
+    "time": "40 min",
+    "servings": "8",
+    "image": "https://i.pinimg.com/736x/e8/3b/2b/e83b2b001635fd51fdbfbf8023eaaafe.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Pink Smoothie Bowl",
+    "category": "bowls",
+    "desc": "Breakfast bowl with berry swirls",
+    "ingredients": ["yogurt", "berries", "banana", "granola"],
+    "time": "10 min",
+    "servings": "1",
+    "image": "https://i.pinimg.com/1200x/c7/bb/2a/c7bb2a3ac9f9eeaf177ef9725388b8d0.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Caramel Puff Pastry",
+    "category": "pastries",
+    "desc": "Flaky pastry with caramel center",
+    "ingredients": ["puff pastry", "sugar", "butter", "cream"],
+    "time": "45 min",
+    "servings": "6",
+    "image": "https://i.pinimg.com/1200x/d2/a2/c4/d2a2c4f2a4ff88838f8b3944c3059a6f.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Almond Cookie Stacks",
+    "category": "cookies",
+    "desc": "Crunchy almond cookies stacked with jam",
+    "ingredients": ["almond flour", "sugar", "butter", "jam"],
+    "time": "30 min",
+    "servings": "14",
+    "image": "https://i.pinimg.com/736x/4d/cc/3f/4dcc3fc3fe66980ac1ec16ec973071b7.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Pumpkin Spice Muffins",
+    "category": "muffins",
+    "desc": "Cozy muffins with warm spices",
+    "ingredients": ["flour", "pumpkin", "sugar", "eggs", "spices"],
+    "time": "35 min",
+    "servings": "12",
+    "image": "https://i.pinimg.com/1200x/09/7f/c9/097fc96cec93f010b722a10f462f0d0b.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Raspberry Cheesecake Cups",
+    "category": "desserts",
+    "desc": "Mini no-bake cheesecake cups",
+    "ingredients": ["cream cheese", "sugar", "raspberries", "crust"],
+    "time": "20 min",
+    "servings": "6",
+    "image": "https://i.pinimg.com/1200x/c8/0b/79/c80b79a757f8511957d217a5efcd68ef.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Cinnamon Sugar Twists",
+    "category": "pastries",
+    "desc": "Sweet twisted pastries with cinnamon sugar",
+    "ingredients": ["flour", "butter", "sugar", "cinnamon", "yeast"],
+    "time": "1.5 hrs",
+    "servings": "10",
+    "image": "https://i.pinimg.com/1200x/f1/42/18/f14218c1a52f84ad8366f48c37ac996f.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Sakura Jelly",
+    "category": "desserts",
+    "desc": "Cherry blossom inspired gelatin dessert",
+    "ingredients": ["gelatin", "sugar", "cherry water", "fruit"],
+    "time": "3 hrs",
+    "servings": "8",
+    "image": "https://i.pinimg.com/736x/18/a7/8d/18a78d0f49f16e165239c083a92a7486.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Peach Cobbler",
+    "category": "desserts",
+    "desc": "Warm peach cobbler with biscuit topping",
+    "ingredients": ["peaches", "flour", "sugar", "butter"],
+    "time": "1 hr",
+    "servings": "6",
+    "image": "https://i.pinimg.com/1200x/4d/9a/fd/4d9afd3a0a91e4ecc9e2ad0043db135e.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Chocolate Ganache Tart",
+    "category": "tart",
+    "desc": "Rich ganache in a crisp tart shell",
+    "ingredients": ["chocolate", "cream", "butter", "flour"],
+    "time": "1 hr",
+    "servings": "8",
+    "image": "https://i.pinimg.com/1200x/19/d3/5c/19d35cc2a7cc9e85b1307e238ec71be1.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Maple Pecan Bites",
+    "category": "snacks",
+    "desc": "Sticky-sweet pecan bites",
+    "ingredients": ["pecans", "maple syrup", "butter", "sugar"],
+    "time": "25 min",
+    "servings": "16",
+    "image": "https://i.pinimg.com/736x/c0/4c/3f/c04c3fc3789488c3234e4c3d8a541462.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Lavender Shortbread",
+    "category": "cookies",
+    "desc": "Buttery shortbread scented with lavender",
+    "ingredients": ["flour", "butter", "sugar", "lavender"],
+    "time": "30 min",
+    "servings": "12",
+    "image": "https://i.pinimg.com/736x/1b/fd/d1/1bfdd1159edf0961b0f1c56b3f186666.jpg"
+  }
+]
