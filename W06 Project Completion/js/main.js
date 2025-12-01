@@ -15,7 +15,6 @@ let favorites = new Set(JSON.parse(localStorage.getItem('ps_favorites') || '[]')
 export async function initRecipes() {
   setupNavToggles();
   try {
-    // ✅ RUTA ARREGLADA PARA GITHUB Y HOSTING LOCAL
     const data = await fetchRecipes('./data/recipes.json');
 
     allRecipes = data;
